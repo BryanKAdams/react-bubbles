@@ -116,7 +116,7 @@ app.post("/api/login", (req, res) => {
   }
 });
 
-app.get("/api/colors", authenticator, (req, res) => {
+app.get("/api/colors", (req, res) => {
   res.send(colors);
 });
 
